@@ -5,6 +5,7 @@
 
 using System;
 using System.Linq;
+using UnityEngine;
 
 namespace CbAutorenTool.Tools
 {
@@ -106,8 +107,7 @@ namespace CbAutorenTool.Tools
             }
             else
             {
-                System.Windows.MessageBox.Show("Test failed.", "HugeDateTime", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
-                System.Diagnostics.Debugger.Break();
+                Debug.LogError("HugeDateTime: Test failed.");
             }
         }
         public static void Test()
